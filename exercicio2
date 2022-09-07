@@ -1,0 +1,25 @@
+let student = prompt("Qual é o seu nome? ")
+let n1 = prompt("qual a primeira nota? ")
+let n2 = prompt("qual a segunda nota? ")
+let n3 = prompt("qual a terceira nota? ")
+
+n1 = Number(n1)
+n2 = Number(n2)
+n3 = Number(n3)
+
+result = (n1 + n2 + n3)/3;
+
+result = result.toFixed(2)
+
+let aprovado = result > 7
+let recuperação = result < 7 && result > 4
+let reprovado = result < 4
+
+if (aprovado) {
+    alert("parabens você foi aprovado, sua nota: " + result)
+    
+} else if(recuperação){
+    alert("ficou em recuperação, sua nota: " + result)
+}else{
+    alert("você foi reprovado, sua nota: " + result)
+} 
